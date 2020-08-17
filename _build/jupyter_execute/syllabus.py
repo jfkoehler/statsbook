@@ -111,13 +111,3 @@ The New School Food Assistance: For more information on food assistance and addi
 Health and Wellness: For information about services and support available to New School students please click on the link below: https://www.newschool.edu/campus-community/health-wellness-support/
 
 
-
-
-
-```{toctree}
-:hidden:
-:titlesonly:
-
-
-notebooks
-```
