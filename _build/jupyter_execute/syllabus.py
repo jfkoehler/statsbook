@@ -119,5 +119,5 @@ Health and Wellness: For information about services and support available to New
 :titlesonly:
 
 
-syllabus
+notebooks
 ```

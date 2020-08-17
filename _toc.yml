@@ -1,3 +1,4 @@
-file: syllabus
-sections:
 - file: syllabus
+  title: Introduction to Statistics
+- file: notebooks
+
