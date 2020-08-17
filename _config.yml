@@ -1,8 +1,11 @@
 # Book settings
-title: My sample book
-author: The Jupyter Book Community
-logo: logo.png
+title: Introduction to Statistics
+author: Jacob Frias Koehler, PhD
+logo: hennessy.png
 
 latex:
   latex_documents:
     targetname: book.tex
+
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
