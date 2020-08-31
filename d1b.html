@@ -1,12 +1,11 @@
 
 
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Index &#8212; Introduction to Statistics</title>
+    <title>Investigating Police Shooting &#8212; Introduction to Statistics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -37,8 +36,9 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" type="text/javascript" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Introduction to Data" href="d1.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -78,14 +78,14 @@
   </a>
  </li>
 </ul>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="d1.html">
    Introduction to Data
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="d1b.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Investigating Police Shooting
   </a>
  </li>
@@ -127,6 +127,18 @@
             class="fas fa-download"></i></button>
 
     
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/d1b.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
 </div>
         <!-- Source interaction buttons -->
 
@@ -138,10 +150,29 @@
 
         <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/jfkoehler/statsbook/blob/master/d1b.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
     </div>
 
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> On this page
+        </div>
         <nav id="bd-toc-nav">
             
         </nav>
@@ -152,13 +183,38 @@
         
               <div>
                 
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="investigating-police-shooting">
+<h1>Investigating Police Shooting<a class="headerlink" href="#investigating-police-shooting" title="Permalink to this headline">¶</a></h1>
+<p><img alt="" src="_images/wpost.png" /></p>
+<p>Let’s take a look at this <a class="reference external" href="https://raw.githubusercontent.com/washingtonpost/data-police-shootings/master/fatal-police-shootings-data.csv">data</a>, and see how we can read a <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file in to our google drive.  Our goals will be as follows:</p>
+<ol class="simple">
+<li><p>Read in the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file containing information on fatal police shootings.</p></li>
+<li><p>Examine the data and describe what the different features are and their datatypes.</p></li>
+<li><p>Determine an appropriate kind of visualization for each feature.</p></li>
+<li><p>Interpret the visualization and its meaning.</p></li>
+<li><p>Identify 5 topics of interest to your group that could have data available.  Search around and see if you can locate any datasets that seem interesting.  Can you load and explore the data?  What are five questions you might answer with the data?</p></li>
+</ol>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -168,6 +224,7 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="d1.html" title="previous page">Introduction to Data</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
