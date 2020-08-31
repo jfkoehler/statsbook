@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Introduction to Data &#8212; Introduction to Statistics</title>
+    <title>Investigating Police Shooting &#8212; Introduction to Statistics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -38,8 +38,7 @@
     <script async="async" type="text/javascript" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Investigating Police Shooting" href="d1_part_II.html" />
-    <link rel="prev" title="Introduction to Statistics" href="syllabus.html" />
+    <link rel="prev" title="Introduction to Data" href="d1.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -80,13 +79,13 @@
  </li>
 </ul>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="d1.html">
    Introduction to Data
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="d1_part_II.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Investigating Police Shooting
   </a>
  </li>
@@ -132,7 +131,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/d1.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/d1_part_II.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -158,7 +157,7 @@
         
         
         
-        <a class="colab-button" href="https://colab.research.google.com/github/jfkoehler/statsbook/blob/master/d1.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+        <a class="colab-button" href="https://colab.research.google.com/github/jfkoehler/statsbook/blob/master/d1_part_II.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
                 title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
                     src="_static/images/logo_colab.png"
                     alt="Interact on Colab">Colab</button></a>
@@ -175,14 +174,7 @@
             <i class="fas fa-list"></i> On this page
         </div>
         <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-and-data-files">
-   Data and Data Files
-  </a>
- </li>
-</ul>
-
+            
         </nav>
     </div>
 </div>
@@ -191,45 +183,17 @@
         
               <div>
                 
-  <div class="section" id="introduction-to-data">
-<h1>Introduction to Data<a class="headerlink" href="#introduction-to-data" title="Permalink to this headline">¶</a></h1>
-<p>Today our goals are to understand how we can load and explore data in three different formats – Google Sheets, SPSS, and Python.  In addition to being able to load data using these sources we will explore datatypes and begin exploring different data sources.  By the end of this lesson students should be able to:</p>
-<ul class="simple">
-<li><p>Load and interact with <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files using google sheets, spss, and python</p></li>
-<li><p>Determine and describe data types</p></li>
-<li><p>Determine and describe missing data</p></li>
-</ul>
-<div class="section" id="data-and-data-files">
-<h2>Data and Data Files<a class="headerlink" href="#data-and-data-files" title="Permalink to this headline">¶</a></h2>
-<p>To start, we will practice opening data with google drive.  First, we want to open a dataset from the Gapminder organization <a class="reference external" href="https://docs.google.com/spreadsheets/d/1-iFlIHA79TyivLvlc2615KEQLpx6CeF48wG1pUUE3EM/edit?usp=sharing">here</a>.  You should see something like the screen below when you open the file:</p>
-<p><img alt="" src="_images/d1p1.png" /></p>
-<p><strong>QUESTIONS</strong></p>
+  <div class="section" id="investigating-police-shooting">
+<h1>Investigating Police Shooting<a class="headerlink" href="#investigating-police-shooting" title="Permalink to this headline">¶</a></h1>
+<p><img alt="" src="_images/wpost.png" /></p>
+<p>Let’s take a look at this <a class="reference external" href="https://raw.githubusercontent.com/washingtonpost/data-police-shootings/master/fatal-police-shootings-data.csv">data</a>, and see how we can read a <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file in to our google drive.  Our goals will be as follows:</p>
 <ol class="simple">
-<li><p>What information is contained in the dataset?</p></li>
-<li><p>What does each row represent?</p></li>
-<li><p>What do the columns represent?</p></li>
-<li><p>Are there different kinds of data? Explain.</p></li>
-<li><p>Where is the country Chad located in the data?</p></li>
-<li><p>Where is the information on GDP in the year 2002?</p></li>
-<li><p>What is one question you could answer using this data?</p></li>
+<li><p>Read in the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file containing information on fatal police shootings.</p></li>
+<li><p>Examine the data and describe what the different features are and their datatypes.</p></li>
+<li><p>Determine an appropriate kind of visualization for each feature.</p></li>
+<li><p>Interpret the visualization and its meaning.</p></li>
+<li><p>Identify 5 topics of interest to your group that could have data available.  Search around and see if you can locate any datasets that seem interesting.  Can you load and explore the data?  What are five questions you might answer with the data?</p></li>
 </ol>
-<p><strong>Data and Data Types</strong></p>
-<p>Now let’s examine a dataset dealing with drinking around the world <a class="reference external" href="https://docs.google.com/spreadsheets/d/1_aZKwlITGUzItx9DFx_fYjxYvqOWxydk_THz7UBL6zw/edit?usp=sharing">here</a>.</p>
-<ol class="simple">
-<li><p>Identify the data type of each column:</p></li>
-</ol>
-<ul class="simple">
-<li><p>Object or Category</p></li>
-<li><p>Integer or Count</p></li>
-<li><p>Float or Continuous</p></li>
-</ul>
-<ol class="simple">
-<li><p>What is one question you could answer using this data?</p></li>
-<li><p>What is the fastest way to find the USA data?</p></li>
-<li><p>Can you limit the data to only EU countries?</p></li>
-<li><p>What country drinks the most wine?</p></li>
-</ol>
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -260,8 +224,7 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="syllabus.html" title="previous page">Introduction to Statistics</a>
-    <a class='right-next' id="next-link" href="d1_part_II.html" title="next page">Investigating Police Shooting</a>
+    <a class='left-prev' id="prev-link" href="d1.html" title="previous page">Introduction to Data</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
